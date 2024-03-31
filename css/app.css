@@ -292,7 +292,6 @@ section {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    min-height: auto;
     padding-top: 10rem;
 }
 
@@ -723,6 +722,25 @@ footer .end p {
         border-bottom: 2px solid #efefef;
         line-height: 1.5;
         margin-bottom: 20px;
+    }
+
+    .home-content {
+        display: grid;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
+    .home-button {
+        display: none;
+    }
+
+    .about .content .more .interest .interest-section .line-1 {
+        width: 250px;
+    }
+
+    .about .content .more .experience .experience-section .line-2 {
+        width: 250px;
     }
 }
 
