@@ -71,7 +71,6 @@ $(document).ready(function() {
 });
 
 function showAlert(message, type) {
-    // Hapus kelas CSS sebelumnya
     $('#alertMessage').removeClass('alert-success alert-error');
     
     var alertClass = (type === 'success') ? 'alert-success' : 'alert-error';
