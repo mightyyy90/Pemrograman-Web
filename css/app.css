@@ -690,6 +690,30 @@ footer .end p {
     color: white;
 }
 
+.alert {
+    display: none;
+    position: fixed; /* Mengatur posisi elemen alert */
+    top: 0; /* Menempatkan elemen alert di bagian atas halaman */
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    background-color: #f44336; /* Warna latar belakang untuk alert error */
+    color: white; /* Warna teks untuk alert */
+    z-index: 1000; /* Menentukan z-index untuk menempatkan elemen alert di atas konten */
+}
+
+.alert-success {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.alert-error {
+    background-color: #f44336;
+    color: white;
+}
+
+
 @media (max-width: 768px) {
     html {
         font-size: 65%;
@@ -742,10 +766,18 @@ footer .end p {
     .about .content .more .experience .experience-section .line-2 {
         width: 250px;
     }
+
+    footer {
+        width: 100vh;
+    }
 }
 
 @media (max-width: 450px) {
     html {
         font-size: 55%;
+    }
+
+    footer {
+        width: 100vh;
     }
 }
