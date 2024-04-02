@@ -58,12 +58,6 @@ $(document).ready(function() {
             showAlert('Nomor telepon harus diantara 10 sampai 13 karakter.', 'error');
             return;
         }
-
-        var message = $('#message').val();
-        if (!isValidMessage(message)) {
-            showAlert('Maksimal 500 karakter.', 'error');
-            return;
-        }
         
         showAlert('Formulir berhasil dikirim!', 'success');
         this.reset();
@@ -96,9 +90,3 @@ function isValidPhoneNumber(number) {
     var numberRegex = /^\d{10,13}$/;
     return numberRegex.test(number);
 }
-
-function isValidMessage(message) {
-    var messageRegex = /^\d{0,500}$/;
-    return numberRegex.test(message);
-}
-
