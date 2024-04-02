@@ -2,20 +2,27 @@ let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header .navbar .nav a');
 
 window.onscroll = () => {
+    let fromTop = window.scrollY;
+    
     sections.forEach(sec => {
-        let top = window.scrollY;
-        let offset = sec.offsetTop - 100;
-        let height = sec.offsetHeight;
-        let id = sec.getAttribute('id');
-
-        if(top >= offset && top < offset + height) {
-            navLinks.forEach(links => {
-                links.classList.remove('active');
-                document.querySelector('header .navbar .nav a[href*=' + id + ']').classList.add('active');
+        let secTop = sec.offsetTop - 100;
+        let secHeight = sec.offsetHeight;
+        let secId = sec.getAttribute('id');
+        
+        if (fromTop >= secTop && fromTop < secTop + secHeight) {
+            navLinks.forEach(link => {
+                link.classList.remove('active');
             });
+
+            let activeLink = document.querySelector('header .navbar .nav a[href="#' + secId + '"]');
+            if (activeLink) {
+                activeLink.classList.add('active');
+            }
         }
     });
-}
+};
+
+
 const navbarnav = document.querySelector ('.nav');
 document.querySelector('#menu-icon').
 onclick = () => {
@@ -28,3 +35,4 @@ document.addEventListener('click', function (e) {
         navbarnav.classList.remove('active');
     }
 });
+
