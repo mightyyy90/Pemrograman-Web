@@ -59,7 +59,7 @@ $(document).ready(function() {
             return;
         }
 
-        var number = $('#message').val();
+        var message = $('#message').val();
         if (!isValidMessage(message)) {
             showAlert('Maksimal 500 karakter.', 'error');
             return;
