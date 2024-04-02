@@ -692,15 +692,15 @@ footer .end p {
 
 .alert {
     display: none;
-    position: fixed; /* Mengatur posisi elemen alert */
-    top: 0; /* Menempatkan elemen alert di bagian atas halaman */
+    position: fixed; 
+    top: 0; 
     left: 0;
     width: 100%;
     padding: 20px;
     text-align: center;
-    background-color: #f44336; /* Warna latar belakang untuk alert error */
-    color: white; /* Warna teks untuk alert */
-    z-index: 1000; /* Menentukan z-index untuk menempatkan elemen alert di atas konten */
+    background-color: #f44336; 
+    color: white;
+    z-index: 1000;
 }
 
 .alert-success {
