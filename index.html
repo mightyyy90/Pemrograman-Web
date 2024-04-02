@@ -170,8 +170,8 @@
                     </div>
                 </div>
             </div>
-        </section>
-        
+        </section>        
+        <div class="alert" id="alertMessage"></div>
         <section class="contact" id="contact">
             <div class="text">
                 <h2 class="first">Let's Work <span>Together!</span></h2>
@@ -185,20 +185,20 @@
                 </div>
             </div>
             <div class="formulir">
-                <form action="#">
+                <form action="#" id="MessageForm">
                     <div class="input-box">
                         <div class="input-field">
-                            <input type="text" placeholder="Name" required>
+                            <input type="text" id="name" name="name" placeholder="Name" required>
                         </div>
                     </div>
                     <div class="input-box">
                         <div class="input-field">
-                            <input type="text" placeholder="Email" required>
+                            <input type="email" id="email" name="email" placeholder="Email" required>
                         </div>
                     </div>
                     <div class="input-box">
                         <div class="input-field">
-                            <input type="number" placeholder="Mobile Number" required>
+                            <input type="number" id="number" name="number" placeholder="Mobile Number" required>
                         </div>
                     </div>
                     <div class="textarea-field">
@@ -269,8 +269,9 @@
                 <p>Copyright © 2023 by Mochamad Rafi Octavia | All Rights Reserved.</p>
             </div>
         </footer>
-    </main>
 
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
