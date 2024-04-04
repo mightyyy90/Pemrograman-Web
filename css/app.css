@@ -187,6 +187,8 @@ section {
 .about .content .more {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 5rem;
     line-height: 1.5;
     width: 750px;
 }
@@ -693,15 +695,15 @@ footer .end p {
 
 .alert {
     display: none;
-    position: fixed; 
-    top: 0; 
+    position: fixed; /* Mengatur posisi elemen alert */
+    top: 0; /* Menempatkan elemen alert di bagian atas halaman */
     left: 0;
     width: 100%;
     padding: 20px;
     text-align: center;
-    background-color: #f44336; 
-    color: white;
-    z-index: 1000;
+    background-color: #f44336; /* Warna latar belakang untuk alert error */
+    color: white; /* Warna teks untuk alert */
+    z-index: 1000; /* Menentukan z-index untuk menempatkan elemen alert di atas konten */
 }
 
 .alert-success {
@@ -715,10 +717,9 @@ footer .end p {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     html {
         font-size: 65%;
-
     }
 
     #menu-icon {
@@ -749,6 +750,12 @@ footer .end p {
         margin-bottom: 20px;
     }
 
+    .home {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+
     .home-content {
         display: grid;
         justify-content: center;
@@ -769,7 +776,7 @@ footer .end p {
     }
 
     footer {
-        width: 100vh;
+        width: 100%;
     }
 }
 
